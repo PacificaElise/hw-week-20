@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="trans-quick">
+    <div class="bg-hero trans-quick" id="behind"></div>
+    <div class="bg-hero trans-quick" id="infront"></div>
+    <div id="container">
+      <button id="last"></button>
+      <button id="next"></button>
+      <div class="trans-quick" id="card">
+        <h1 id="hero"></h1>
+        <div class="view">
+          <img src="images/iron_man.jpeg" id="image" alt="hero" />
+          <span id="alterego"></span>
+        </div>
+        <p id="description"></p>
+        <div class="rtg">
+          <label for="raiting">
+            Поставьте оценку <br />
+            от 0 до 10
+            <input type="number" name="raiting" id="raiting" min="0" max="10"
+          /></label>
+          <button id="add">Добавить оценку</button>
+        </div>
+      </div>
+    </div>
+
+    <a
+      href="https://www.ellegirl.ru/articles/vse-o-15-samyih-krutyih-supergeroyah/"
+      target="_blank"
+    >
+      <img src="logo_marvelheroes.png" />
+    </a>
+  </body>
+
+  <script src="script.js"></script>
+</html>

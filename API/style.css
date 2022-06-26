@@ -1,0 +1,112 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-color: #69f0ae;
+  background-image: url("https://kartinkin.net/uploads/posts/2021-07/thumbs/1625846410_13-kartinkin-com-p-cherno-biryuzovie-oboi-krasivie-13.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Alegreya Sans", sans-serif;
+}
+.card {
+  width: 600px;
+  height: 300px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  padding: 35px;
+}
+.photo-wrapper {
+  width: 200px;
+  height: 100%;
+  background-color: #f9a825;
+  margin-right: 35px;
+  background-color: #69f0ae;
+  background-size: cover;
+  background-position: center;
+}
+.photo-img {
+  width: 200px;
+}
+
+.content {
+  width: 365px;
+  height: 100%;
+  /*background-color: #ff8a65;*/
+}
+
+.spec {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #f9a825;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 900;
+  color: #263238;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 500;
+  color: #546e7a;
+  font-size: 18px;
+}
+
+p {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.text {
+  display: flex;
+  margin: 5px;
+}
+
+.text1 {
+  width: 50px;
+  margin-right: 20px;
+  font-weight: 600;
+  color: #263238;
+}
+
+.sozial {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #3d454f;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.sozial:hover {
+  background-color: #279262;
+}
+
+.sozial i {
+  margin-right: 5px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#projects {
+  color: #263238;
+}

@@ -1,0 +1,250 @@
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+body {
+  overflow: hidden;
+  background: #656767
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/380275/paper-3.png")
+    repeat fixed center;
+  font-family: "Libre Baskerville", Georgia, serif;
+  color: rgba(127, 127, 127, 0.927);
+}
+
+a {
+  width: 100px;
+  height: 100px;
+  z-index: 200;
+  position: absolute;
+  bottom: 0.2rem;
+  left: 0.2rem;
+  opacity: 0.3;
+  transition: all 0.2s;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+a img {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: auto;
+}
+
+.trans-quick {
+  transition: all 0.4s;
+}
+
+#container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.bg-hero {
+  padding: 2rem 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 40vw;
+  line-height: 34vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#behind {
+  color: #f36363;
+  opacity: 0.1;
+}
+
+#infront {
+  color: #555;
+  opacity: 0.035;
+}
+
+#card {
+  overflow: hidden;
+  padding: 3rem;
+  width: 95vw;
+  max-width: 21rem;
+  min-height: 15.75rem;
+  box-shadow: 0 50px 70px -50px rgba(0, 0, 0, 0.45),
+    0 50px 200px -50px rgba(0, 0, 0, 0.5);
+  background: #fff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#card * {
+  transition: opacity 0.4s, text-shadow 0.8s, color 0.4s, transform 0s;
+  opacity: 1;
+}
+
+#hero {
+  align-self: flex-end;
+  font-size: 2rem;
+  line-height: 1rem;
+}
+
+#alterego {
+  font-size: 1.1rem;
+  align-self: flex-end;
+  font-style: italic;
+  line-height: auto;
+  color: #f55032;
+}
+
+#description {
+  width: 100%;
+}
+
+button {
+  margin: 20px;
+  width: 0px;
+  height: 0px;
+  z-index: 25;
+  background: transparent;
+  border-radius: 0;
+  outline: none;
+  border: none;
+}
+
+#last {
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid rgba(255, 255, 255, 0.5);
+  transition: 0.1s;
+}
+#last:hover {
+  border-right: 20px solid rgba(255, 255, 255, 0.9);
+}
+
+#next {
+  order: 3;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid rgba(255, 255, 255, 0.5);
+  transition: 0.1s;
+}
+#next:hover {
+  border-left: 20px solid rgba(255, 255, 255, 0.9);
+}
+
+#container > button:active ~ #card {
+  transition: 0.05s 0s;
+  transform: translateY(0.5rem);
+}
+
+body.fadeout {
+  background: #f74424
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/380275/paper-3.png")
+    repeat fixed center;
+}
+
+body.fadeout .bg-hero#infront {
+  opacity: 0;
+}
+
+#card.fadeout #hero,
+#card.fadeout #description,
+#card.fadeout #alterego {
+  opacity: 0;
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transform: translateY(-21rem) scale(3);
+  transition: all 1.2s 0.1s, color 0.5s 0s, text-shadow 0.5s 0s;
+}
+
+#card.fadeout #description {
+  transform: translateY(21rem) translateX(-6rem) scale(2);
+}
+
+img {
+  width: 40%;
+  height: 40%;
+}
+
+.view {
+  display: flex;
+  flex-direction: row;
+}
+
+#raiting {
+  z-index: 50;
+}
+
+.rtg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  z-index: 100;
+}
+
+#add {
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Baskerville", Georgia, serif;
+  color: rgba(127, 127, 127, 0.927);
+  font-size: 18px;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 100;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+#add:hover {
+  background: #f55c32;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  a {
+    width: 50px;
+    height: 50px;
+  }
+
+  button {
+    padding: 0;
+  }
+
+  #last {
+    margin: 0 0.4rem 0 0;
+  }
+
+  #next {
+    margin: 0 0 0 0.4rem;
+  }
+
+  #card {
+    padding: 1rem;
+    min-height: 10rem;
+  }
+
+  #hero {
+    font-size: 1.5rem;
+  }
+
+  #alterego,
+  #description {
+    font-size: 0.8rem;
+  }
+}
